@@ -42,7 +42,7 @@ const setImagesToWallpaper = async (subreddit, time, limit='100') => {
     }
 }
 
-const subreddits = process.argv.slice(2)
+const subreddits = process.argv.slice(2).length === 0 ? ['art'] : process.argv.slice(2)
 
 const times = ['day', 'month', 'week', 'year', 'all']
 
